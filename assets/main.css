@@ -49,3 +49,20 @@ ul {
 	min-height: 70px;
 	background-color: #202020;
 }
+.copyright {
+	width: 235px;
+	border: 1px solid red;
+	color: #9b9b9b;
+	font-size: 12px;
+	float: left;
+}
+.icon {
+	box-sizing: border-box;
+	border: 1px solid green;
+	width: 100px;
+	float: right;
+}
+.icon li {
+	display: inline;
+	color: yellow;
+}
