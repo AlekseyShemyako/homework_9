@@ -6,6 +6,9 @@ ul {
 	padding: 0;
 	list-style-type: none;
 }
+h1 {
+	margin: 0;
+}
 p {
 	margin: 0;
 }
@@ -38,6 +41,67 @@ p {
 	min-height: 445px;
 	background-color: #202020;
 }
+.welcome {
+	text-align: center;
+	color: #9b9b9b;
+	font-size: 24px;
+}
+.psevdo:before,
+.welcome-sub:before {
+	box-sizing: border-box;
+	content: '~';
+	font-size: 28px;
+	position: relative;
+	right: 20px;
+}
+.psevdo:after,
+.welcome-sub:after {
+	box-sizing: border-box;
+	content: '~';
+	font-size: 28px;
+	position: relative;
+	left: 20px;
+}
+.welcome-sub:before {
+	content: '"';
+	font-size: 60px;
+	right: -10px;
+}
+.welcome-sub:after {
+	content: '"';
+	font-size: 60px;
+	left: -10px;
+}
+.text p:first-child:before {
+	content: url('./img/icon/face.png');
+}
+.text p:nth-child(2):before {
+	content: url('./img/icon/comment.png');
+}
+.text p:nth-child(3):before {
+	content: url('./img/icon/settings.png');
+}
+.text p::first-line {
+	font-size: 29px;
+	line-height: 40px;
+}
+
+
+.welcome-sub {
+	margin-bottom: 60px;
+	font-size: 60px;
+}
+.text p {
+	box-sizing: border-box;
+	margin: 0 55px 55px 0;
+	width: 22.7vw;
+	border: 1px solid red;
+	float: left;
+	color: #9b9b9b;
+	font-size: 14px;
+	line-height: 22px;
+}
+
 .image {
 	padding-top: 75px;
 	border: 1px solid blue;
@@ -102,12 +166,30 @@ p {
 }
 .contact-form input {
 	box-sizing: border-box;
+	display: inline-block;
 	margin-bottom: 21px;
 	padding: 0 43px;
 	border: 0;
 	display: block;
 	width: 459px;
 	min-height: 49px;
+	color: #9b9b9b;
+	font-size: 16px;
+}
+.contact-form input:first-child {
+	background: url('./img/icon/face.png') 20px center;
+}
+.contact-form input:nth-child(2) {
+	background: url('./img/icon/mail.png') 20px center;
+}
+.contact-form input:nth-child(3) {
+	background: url('./img/icon/website.png') 20px center;
+}
+.contact-form input:first-child,
+.contact-form input:nth-child(2),
+.contact-form input:nth-child(3) {
+	background-repeat: no-repeat;
+	background-size: 15px;
 	background-color: #282828;
 }
 textarea {
@@ -121,6 +203,8 @@ textarea {
 	width: 459px;
 	height: 160px;
 	background-color: #282828;
+	color: #9b9b9b;
+	font-size: 16px;
 }
 button {
 	box-sizing: border-box;
