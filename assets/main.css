@@ -36,13 +36,65 @@ ul {
 	background-color: #202020;
 }
 .image {
+	padding-top: 75px;
 	border: 1px solid blue;
 	min-height: 760px;
 }
 .contact {
+	padding-top: 75px;
 	border: 1px solid yellow;
 	min-height: 625px;
 	background-color: #202020;
+}
+.contact-form input {
+	box-sizing: border-box;
+	margin-bottom: 21px;
+	padding: 0 43px;
+	border: 0;
+	display: block;
+	width: 459px;
+	min-height: 49px;
+	background-color: #282828;
+}
+textarea {
+	box-sizing: border-box;
+	margin-bottom: 21px;
+	padding: 20px 43px 0;
+	border: 0;
+	display: block;
+	resize: none;
+	margin-bottom: 28px;
+	width: 459px;
+	height: 160px;
+	background-color: #282828;
+}
+button {
+	box-sizing: border-box;
+	padding: 0 43px;
+	border: 0;
+	display: block;
+	min-width: 127px;
+	min-height: 48px;
+	background-color: #282828;
+	color: white;
+}
+.contact:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.author {
+	margin: -1px 0 0 -1px;
+}
+.contact-form,
+.contact-image {
+	box-sizing: border-box;
+	width: 40vw;
+	min-height: 30vh;
+	border: 1px solid white;
+	float: left;
+	color: white;
 }
 .footer {
 	border: 1px solid orange;
