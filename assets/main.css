@@ -55,23 +55,22 @@ p {
 	float: left;
 	border: 1px solid yellow;
 }
-.image-click {
-	float: left;
-}
 .image-pack img {
 	width: 220px;
 	display: inline-block;
 	margin: 0 20px 20px 0;
 }
-.clearfix:after {
-	content: '';
-	display: block;
-	clear: both;
-}
 .image-click {
 	width: 464px;
 	min-height: 600px;
 	border: 1px solid green;
+	position: relative;
+	float: left;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 .hidden-text:after {
 	content: url('./img/icon/select-left.png');
@@ -91,9 +90,8 @@ p {
 	padding: 25px 74px;
 	min-width: 461px;
 	min-height: 108px;
-	position: relative;
-	top: -115px;
-	z-index: 1;
+	position: absolute;
+	bottom: 0;
 	background-color: black;
 	color: #9b9b9b;
 	opacity: 0;
