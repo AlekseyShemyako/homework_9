@@ -75,28 +75,28 @@ li {
 	color: #9b9b9b;
 	font-size: 24px;
 }
-.psevdo:before,
-.welcome-sub:before {
+.psevdo::before,
+.welcome-sub::before {
 	box-sizing: border-box;
 	content: '~';
 	font-size: 28px;
 	position: relative;
 	right: 20px;
 }
-.psevdo:after,
-.welcome-sub:after {
+.psevdo::after,
+.welcome-sub::after {
 	box-sizing: border-box;
 	content: '~';
 	font-size: 28px;
 	position: relative;
 	left: 20px;
 }
-.welcome-sub:before {
+.welcome-sub::before {
 	content: '“';
 	font-size: 60px;
 	right: -10px;
 }
-.welcome-sub:after {
+.welcome-sub::after {
 	content: '„';
 	font-size: 60px;
 	top: -30px;
@@ -154,18 +154,18 @@ li {
 	position: relative;
 	float: left;
 }
-.clearfix:after {
+.clearfix::after {
 	content: '';
 	display: block;
 	clear: both;
 }
-.hidden-text:after {
+.hidden-text::after {
 	content: url('./img/icon/select-left.png');
 	position: absolute;
 	left: 22px;
 	bottom: 32px;
 }
-.hidden-text:before {
+.hidden-text::before {
 	content: url('./img/icon/select-right.png');
 	position: absolute;
 	right: 22px;
@@ -242,7 +242,7 @@ button {
 	cursor: pointer;
 	font-family: 'georgia', normal;
 }
-.contact:after {
+.contact::after {
 	content: '';
 	display: block;
 	clear: both;
