@@ -1,4 +1,9 @@
+@font-face{
+	font-family: 'georgia';
+	src: url('./fonts/georgia.ttf');
+}
 body {
+	font-family: 'georgia', normal;
 	margin: 0;
 }
 ul {
@@ -23,21 +28,45 @@ p {
 	background-color: #2d2d2d;
 }
 .sticky{
-	border: 1px solid red;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	min-height: 121px;
 	z-index: 1000;
+	background-color: #2d2d2d;
 }
 .slider {
-	border: 1px solid green;
-	min-height: 200px;
+	min-height: 250px;
 	background-color: #202020;
 }
+.slider-photo{
+	box-sizing: border-box;
+	position: relative;
+	min-height: 150px;
+}
+ul,
+li {
+	display: inline;
+}
+.sticky-nav {
+	color: #9b9b9b;
+	font-size: 18px;
+	width: 30vw;
+	margin-top: 50px;
+	float: left;
+}
+.icon-nav {
+	margin-top: 50px;
+}
+.slider-photo img {
+	position: absolute;
+	min-height: 460px;
+	top: -220px;
+	left: 0;
+	right: 0;
+}
 .portfolio {
-	border: 1px solid white;
 	min-height: 445px;
 	background-color: #202020;
 }
@@ -63,13 +92,14 @@ p {
 	left: 20px;
 }
 .welcome-sub:before {
-	content: '"';
+	content: '“';
 	font-size: 60px;
 	right: -10px;
 }
 .welcome-sub:after {
-	content: '"';
+	content: '„';
 	font-size: 60px;
+	top: -30px;
 	left: -10px;
 }
 .text p:first-child:before {
@@ -85,8 +115,6 @@ p {
 	font-size: 29px;
 	line-height: 40px;
 }
-
-
 .welcome-sub {
 	margin-bottom: 60px;
 	font-size: 60px;
@@ -95,7 +123,6 @@ p {
 	box-sizing: border-box;
 	margin: 0 55px 55px 0;
 	width: 22.7vw;
-	border: 1px solid red;
 	float: left;
 	color: #9b9b9b;
 	font-size: 14px;
@@ -104,12 +131,10 @@ p {
 
 .image {
 	padding-top: 75px;
-	border: 1px solid blue;
 	min-height: 760px;
 }
 .contact {
 	padding-top: 75px;
-	border: 1px solid yellow;
 	min-height: 625px;
 	background-color: #202020;
 }
@@ -117,7 +142,6 @@ p {
 	width: 40vw;
 	min-height: 600px;
 	float: left;
-	border: 1px solid yellow;
 }
 .image-pack img {
 	width: 220px;
@@ -127,7 +151,6 @@ p {
 .image-click {
 	width: 464px;
 	min-height: 600px;
-	border: 1px solid green;
 	position: relative;
 	float: left;
 }
@@ -191,6 +214,7 @@ p {
 	background-repeat: no-repeat;
 	background-size: 15px;
 	background-color: #282828;
+	font-family: 'georgia', normal;
 }
 textarea {
 	box-sizing: border-box;
@@ -214,7 +238,9 @@ button {
 	min-width: 127px;
 	min-height: 48px;
 	background-color: #282828;
-	color: white;
+	color: #9b9b9b;
+	cursor: pointer;
+	font-family: 'georgia', normal;
 }
 .contact:after {
 	content: '';
@@ -222,37 +248,54 @@ button {
 	clear: both;
 }
 
-.author {
-	margin: -1px 0 0 -1px;
-}
 .contact-form,
 .contact-image {
 	box-sizing: border-box;
 	width: 40vw;
 	min-height: 30vh;
-	border: 1px solid white;
 	float: left;
-	color: white;
+	color: #9b9b9b;
+}
+.author {
+	float: left;
+	margin: 0 18px 41px 0;
+}
+.contact-data li {
+	display:  block;
+}
+.contact-data li {
+	line-height: 22px;
+}
+.contact-data li:last-child {
+	padding-top: 20px;
+}
+.sub-contact-data li {
+	display: inline-block;
+	margin-left: 10px;
+	color: #c1c1c1;
 }
 .footer {
-	border: 1px solid orange;
 	min-height: 70px;
 	background-color: #202020;
 }
 .copyright {
 	min-width: 235px;
-	border: 1px solid red;
 	color: #9b9b9b;
 	font-size: 12px;
 	float: left;
 }
 .icon {
 	box-sizing: border-box;
-	border: 1px solid green;
-	width: 100px;
+	width: 120px;
 	float: right;
 }
 .icon li {
 	display: inline;
 	color: yellow;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.icon li a {
+	background: no-repeat;
+	text-decoration: none;
 }
