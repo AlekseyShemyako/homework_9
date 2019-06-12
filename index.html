@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>hw-9</title>
-	<link rel="stylesheet" type="text/css" href="./assets/main.css">
+	<link rel="stylesheet" href="./assets/main.css">
 </head>
 <body>
 	<div class="container">
-		<div class="size sticky clearfix">
-			<nav class="sticky-nav">
+		<nav class="nav">
+			<div>
 				<ul>
 					<li>
 						John R. Doe /
@@ -19,165 +19,281 @@
 						</ul>
 					</li>
 				</ul>
-			</nav>
-			<ul class="icon icon-nav">
-				<li>
-					<a href="https://twitter.com/" target="_blank">
-						<img src="./assets/img/icon/twitter.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.facebook.com/" target="_blank">
-						<img src="./assets/img/icon/facebook.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="https://vimeo.com/" target="_blank">
-						<img src="./assets/img/icon/vimeo.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="https://fonts.google.com/" target="_blank">
-						<img src="./assets/img/icon/fonts.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.google.com/" target="_blank">
-						<img src="./assets/img/icon/website.png" alt="">
-					</a>
-				</li>
-			</ul>
-		</div>
+				<ul class="icon">
+					<li>
+						<a href="https://twitter.com/" target="_blank">
+							<img src="./assets/img/icon/twitter.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/" target="_blank">
+							<img src="./assets/img/icon/facebook.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="https://vimeo.com/" target="_blank">
+							<img src="./assets/img/icon/vimeo.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="https://fonts.google.com/" target="_blank">
+							<img src="./assets/img/icon/fonts.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.google.com/" target="_blank">
+							<img src="./assets/img/icon/website.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 		<main>
-			<section class="size slider">
-				<div class="slider-photo">
-					<img src="./assets/img/picture/train.png" alt="photo">
-				</div>
+			<section class="slider">
+				<img src="./assets/img/picture/train.png" alt="">
+				<button class="button button-left">
+					<img src="./assets/img/icon/button-left.png" alt="">
+				</button>
+				<button class="button button-right">
+					<img src="./assets/img/icon/button-right.png" alt="">
+				</button>
+				<ul>
+					<li>
+						<button></button>
+					</li>
+					<li>
+						<button></button>
+					</li>
+					<li>
+						<button></button>
+					</li>
+					<li>
+						<button></button>
+					</li>
+					<li>
+						<button></button>
+					</li>
+				</ul>
 			</section>
-			<section class="size portfolio">
-				<h1 class="welcome psevdo">Welcome to my portfolio</h1>
-				<p class="welcome welcome-sub">
-					I make beautiful things happen
-				</p>
-				<div class="clearfix text">
-					<p>
-						A little about me...
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
-					</p>
-					<p>
-						I’m really good at...
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
-					</p>
-					<p>
-						Services I provide...
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
-					</p>
-
-				</div>
-			</section>
-			<section class="size image">
-				<div class="clearfix">
-					<div class="image-pack">
-						<img src="./assets/img/picture/picture-1.png" alt="picture-1">
-						<img src="./assets/img/picture/picture-2.png" alt="picture-2">
-						<img src="./assets/img/picture/picture-3.png" alt="picture-3">
-						<img src="./assets/img/picture/picture-4.png" alt="picture-4">
-						<img src="./assets/img/picture/picture-5.png" alt="picture-5">
-						<img src="./assets/img/picture/picture-6.png" alt="picture-6">
-					</div>
-					<div class="image-click">
-						<img src="./assets/img/picture/picture-7.png" alt="picture-7">
-						<p class="hidden-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis.
+			<section class="portfolio">
+				<div>
+					<header>
+						<h1 class="welcome">
+							Welcome to my portfolio
+						</h1>
+						<p class="welcome-sub">
+							I make beautiful things happen
 						</p>
-					</div>
-				</div>
-			</section>
-			<section class="size contact">
-				<form class="contact-form" 
-					  method="POST" 
-					  action="https://mcslayer.com/hillel/post.php">
-					<input type="text" 
-						   name="login" 
-						   placeholder="Enter your name"
-						   required>
-					<input type="email" 
-						   name="email" 
-						   placeholder="Enter your email address"
-						   required>
-					<input type="url" 
-						   name="url"
-						   placeholder="Enter your website url">
-					<textarea name="text"></textarea>
-					<button >Submit</button>
-				</form>
-				<div class="contact-image">
-					<div class="clearfix">
-						<img src="./assets/img/picture/author.png" alt="author" class="author">
-						<h2>John Doe / Designer & Developer</h2>
+					</header>
+					<div class="clearfix text">
 						<p>
+							A little about me...
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
+						</p>
+						<p>
+							I’m really good at...
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
+						</p>
+						<p>
+							Services I provide...
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
 						</p>
 					</div>
-					<ul class="contact-data">
-						<li>
-							Contact me: 123.456.789
-						</li>
-						<li>
-							Email me: johndoe@gmail.com
-						</li>
-						<li class="sub-contact-data">
-							Follow me:
-							<ul class="sub-contact-data">
-								<li>
-									Twitter /
-								</li>
-								<li>
-									Facebook /
-								</li>
-								<li>
-									Dribbble /
-								</li>
-								<li>
-									Flickr
-								</li>
-							</ul>
-						</li>
-					</ul>
+				</div>
+			</section>
+			<section class="picture">
+				<ul class="hidden picture-sub-small">
+					<li>
+						<img src="./assets/img/picture/picture-1.png" class="photo">
+						<div class="hidden-block">
+							<button class="button button-left">
+								<img src="./assets/img/icon/button-left.png" alt="">
+							</button>
+							<button class="button button-right">
+								<img src="./assets/img/icon/button-right.png" alt="">
+							</button>
+							<p class="hidden-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis.
+							</p>
+						</div>
+					</li>
+					<li>
+						<img src="./assets/img/picture/picture-2.png" class="photo">
+						<div class="hidden-block">
+							<button class="button button-left">
+								<img src="./assets/img/icon/button-left.png" alt="">
+							</button>
+							<button class="button button-right">
+								<img src="./assets/img/icon/button-right.png" alt="">
+							</button>
+							<p class="hidden-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis.
+							</p>
+						</div>
+					</li>
+					<li>
+						<img src="./assets/img/picture/picture-3.png" class="photo">
+						<div class="hidden-block">
+							<button class="button button-left">
+								<img src="./assets/img/icon/button-left.png" alt="">
+							</button>
+							<button class="button button-right">
+								<img src="./assets/img/icon/button-right.png" alt="">
+							</button>
+							<p class="hidden-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis.
+							</p>
+						</div>
+					</li>
+					<li>
+						<img src="./assets/img/picture/picture-4.png" class="photo">
+						<div class="hidden-block">
+							<button class="button button-left">
+								<img src="./assets/img/icon/button-left.png" alt="">
+							</button>
+							<button class="button button-right">
+								<img src="./assets/img/icon/button-right.png" alt="">
+							</button>
+							<p class="hidden-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis.
+							</p>
+						</div>
+					</li>
+					<li>
+						<img src="./assets/img/picture/picture-5.png" class="photo">
+						<div class="hidden-block">
+							<button class="button button-left">
+								<img src="./assets/img/icon/button-left.png" alt="">
+							</button>
+							<button class="button button-right">
+								<img src="./assets/img/icon/button-right.png" alt="">
+							</button>
+							<p class="hidden-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis.
+							</p>
+						</div>
+					</li>
+					<li>
+						<img src="./assets/img/picture/picture-6.png" class="photo">
+						<div class="hidden-block">
+							<button class="button button-left">
+								<img src="./assets/img/icon/button-left.png" alt="">
+							</button>
+							<button class="button button-right">
+								<img src="./assets/img/icon/button-right.png" alt="">
+							</button>
+							<p class="hidden-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis.
+							</p>
+						</div>
+					</li>
+				</ul>
+				<div class="clearfix">
+					<div class="picture-sub-big">
+						<img src="./assets/img/picture/picture-7.png" class="photo-big">
+						<div class="hidden-block">
+							<button class="button button-left">
+								<img src="./assets/img/icon/button-left.png" alt="">
+							</button>
+							<button class="button button-right">
+								<img src="./assets/img/icon/button-right.png" alt="">
+							</button>
+							<p class="hidden-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="form">
+				<div class="form-sub">
+					<form class="form-sub-contacts" 
+						  method="POST" 
+						  action="https://mcslayer.com/hillel/post.php">
+						<input type="text" 
+							   name="login" 
+							   placeholder="Enter your name"
+							   required>
+						<input type="email" 
+							   name="email" 
+							   placeholder="Enter your email address"
+							   required>
+						<input type="url" 
+							   name="url"
+							   placeholder="Enter your website url">
+						<textarea name="text"></textarea>
+						<button class="submit">Submit</button>
+					</form>
+					<div class=" author">
+						<img src="./assets/img/picture/author.png" alt="author">
+						<div class="clearfix author-post">
+							<h2>John Doe / Designer & Developer</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
+							</p>
+						</div>
+						<ul class="contact-data">
+							<li>
+								Contact me: 123.456.789
+							</li>
+							<li>
+								Email me: johndoe@gmail.com
+							</li>
+							<li class="sub-contact-data">
+								Follow me:
+								<ul class="sub-contact-data">
+									<li>
+										Twitter 
+									</li>
+									<li>
+										Facebook 
+									</li>
+									<li>
+										Dribbble 
+									</li>
+									<li>
+										Flickr
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 		</main>
-		<footer class="size footer">
-			<div class="copyright">
-				Copyright © 2015 John Doe. All rights reserved.
+		<footer class="footer">
+			<div class="clearfix footer-sub">
+				<p>
+					Copyright © 2015 John Doe. All rights reserved.
+				</p>
+				<ul class="icon">
+					<li>
+						<a href="https://twitter.com/" target="_blank">
+							<img src="./assets/img/icon/twitter.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/" target="_blank">
+							<img src="./assets/img/icon/facebook.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="https://vimeo.com/" target="_blank">
+							<img src="./assets/img/icon/vimeo.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="https://fonts.google.com/" target="_blank">
+							<img src="./assets/img/icon/fonts.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.google.com/" target="_blank">
+							<img src="./assets/img/icon/website.png" alt="">
+						</a>
+					</li>
+				</ul>
 			</div>
-			<ul class="icon">
-				<li>
-					<a href="https://twitter.com/" target="_blank">
-						<img src="./assets/img/icon/twitter.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.facebook.com/" target="_blank">
-						<img src="./assets/img/icon/facebook.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="https://vimeo.com/" target="_blank">
-						<img src="./assets/img/icon/vimeo.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="https://fonts.google.com/" target="_blank">
-						<img src="./assets/img/icon/fonts.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.google.com/" target="_blank">
-						<img src="./assets/img/icon/website.png" alt="">
-					</a>
-				</li>
-			</ul>
 		</footer>
 	</div>
 </body>
