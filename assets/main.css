@@ -200,12 +200,19 @@ p {
 	width: 220px;
 	position: relative;
 }
-.hidden-block {
+.photo-big-hidden,
+.photo-small-hidden {
+	position: absolute;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
 	opacity: 0;
 }
-.hidden-block:hover {
+.photo-big-hidden:hover,
+.photo-small-hidden:hover {
+	opacity: 1;
 	transition: 1s;
-	opacity: 0.85;
 }
 .hidden-text {
 	height: 90px;
@@ -214,7 +221,10 @@ p {
 	color: #9b9b9b;
 	overflow: auto;
 	position: absolute;
-	bottom: 0;
+	bottom: 3px;
+	left: 3px;
+	right: 3px;
+	opacity: 0.8;
 }
 .picture-sub-small {
 	box-sizing: border-box;
