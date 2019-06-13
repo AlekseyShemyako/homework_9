@@ -44,7 +44,6 @@ p {
 	min-height: 120px;
 	margin: 0 auto;
 	padding: 50px 0 0;
-	border: 1px solid green;
 }
 .nav div ul,
 .nav div li {
@@ -55,9 +54,43 @@ p {
 .slider {
 	box-sizing: border-box;
 	margin: 0 auto;
-	border: 1px solid blue;
+	padding-top: 119px;
 	width: 940px;
 	min-height: 430px;
+	position: relative;
+}
+.slider-position {
+	position: absolute;
+	top: 120px;
+}
+.slider-photo {
+	height: 411px;
+}
+.button-left-slider {
+	position: absolute;
+	left: 25px;
+	bottom: 210px;
+}
+.button-right-slider {
+	position: absolute;
+	right: 25px;
+	bottom: 210px;
+}
+.bullet {
+	box-sizing: border-box;
+	width: 78px;
+	margin: 10px auto 0;
+}
+.bullet button {
+	display: inline-block;
+	border: 0;
+	border-radius: 50px;
+	height: 11px;
+	background-color: #d1d1d1;
+	cursor: pointer;
+}
+.bullet button:nth-child(2){
+	background-color: #727272;
 }
 .portfolio {
 	box-sizing: border-box;
@@ -70,7 +103,6 @@ p {
 .portfolio div {
 	box-sizing: border-box;
 	margin: 0 auto;
-	border: 1px solid red;
 	width: 940px;
 	min-height: 247px;
 }
@@ -133,7 +165,6 @@ p {
 	margin: 0 auto;
 	padding-top: 77px;
 	padding-bottom: 70px;
-	border: 1px solid orange;
 	width: 940px;
 	min-height: 762px;
 }
@@ -147,9 +178,8 @@ p {
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
-	opacity: 0.5;
+	opacity: 0.8;
 	background-color: #494949;
-	vertical-align: middle;
 	cursor: pointer;
 }
 .button-left {
@@ -168,7 +198,6 @@ p {
 	display: inline-block;
 	margin: 0 20px 20px 0;
 	width: 220px;
-	border: 1px solid red;
 	position: relative;
 }
 .hidden-block {
@@ -179,7 +208,6 @@ p {
 	opacity: 0.85;
 }
 .hidden-text {
-	border: 1px solid red;
 	height: 90px;
 	padding: 5px 56px 5px;
 	background-color: black;
@@ -191,19 +219,16 @@ p {
 .picture-sub-small {
 	box-sizing: border-box;
 	width: 490px;
-	border: 1px solid blue;
 	float: left;
 }
 .picture-sub-big {
 	float: right;
 	position: relative;
-	border: 1px solid yellow;
 }
 .photo-big {
 	box-sizing: border-box;
-	border: 1px solid red;
 	width: 445px;
-	height: 607px;
+	height: 603px;
 }
 .button-left {
 	position: absolute;
@@ -219,7 +244,6 @@ p {
 }
 .picture-sub-big .hidden-text {
 	box-sizing: border-box;
-	border: 1px solid red;
 	height: 108px;
 	padding: 25px 71px;
 	background-color: black;
@@ -238,11 +262,9 @@ p {
 	padding: 72px 0 45px 0;
 	width: 940px;
 	min-height: 567px;
-	border: 1px solid green;
 	color: #9b9b9b;
 }
 .form-sub-contacts {
-	border: 1px solid yellow;
 	width: 459px;
 	float: left;
 }
@@ -300,9 +322,9 @@ textarea {
 	cursor: pointer;
 }
 .author {
-	width: 475px;
+	margin-left: 35px;
+	width: 445px;
 	min-height: 446px;
-	border: 1px solid red;
 	float: left;
 }
 .author img {
@@ -317,9 +339,6 @@ textarea {
 .author-post p {
 	font-size: 14px;
 	line-height: 22px;
-}
-.contact-data {
-		border: 1px solid red;
 }
 .contact-data li {
 	font-size: 14px;
@@ -347,7 +366,6 @@ textarea {
 	padding-top: 60px;
 	width: 940px;
 	min-height: 130px;
-	border: 1px solid green;
 }
 .footer-sub p {
 	float: left;
